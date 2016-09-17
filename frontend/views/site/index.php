@@ -4,15 +4,6 @@
 
 $this->title = 'My Yii Application';
 ?>
-<!--    <!---728x90--->
-<!--    <div style="text-align: center;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
-<!--        <ins class="adsbygoogle"-->
-<!--             style="display:inline-block;width:728px;height:90px"-->
-<!--             data-ad-client="ca-pub-9153409599391170"-->
-<!--             data-ad-slot="6850850687"></ins>-->
-<!--        <script>-->
-<!--            (adsbygoogle = window.adsbygoogle || []).push({});-->
-<!--        </script></div>-->
     <div class="content_top" id="about">
         <div class='container'>
             <h2 class="head">Про нас</h2>
@@ -48,15 +39,6 @@ $this->title = 'My Yii Application';
         </div>
     </div>
     <div class="content_middle" id="services">
-        <!---728x90--->
-<!--        <div style="text-align: center;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
-<!--            <ins class="adsbygoogle"-->
-<!--                 style="display:inline-block;width:728px;height:90px"-->
-<!--                 data-ad-client="ca-pub-9153409599391170"-->
-<!--                 data-ad-slot="6850850687"></ins>-->
-<!--            <script>-->
-<!--                (adsbygoogle = window.adsbygoogle || []).push({});-->
-<!--            </script></div>-->
         <div class='container'>
             <h2 class="head">Наші послуги</h2>
             <p class="service_desc">Виконання портрета по фотографії – складний процес, адже художнику необхідно відобразити не лише зовнішню схожість,
@@ -83,224 +65,45 @@ $this->title = 'My Yii Application';
             </div>
         </div>
     </div>
+
     <!--portfolio start here-->
     <div class="content_bottom" id="work">
-        <!---728x90--->
-<!--        <div style="text-align: center;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
-<!--            <ins class="adsbygoogle"-->
-<!--                 style="display:inline-block;width:728px;height:90px"-->
-<!--                 data-ad-client="ca-pub-9153409599391170"-->
-<!--                 data-ad-slot="6850850687"></ins>-->
-<!--            <script>-->
-<!--                (adsbygoogle = window.adsbygoogle || []).push({});-->
-<!--            </script>-->
-<!--        </div>-->
         <div class="container">
             <div class="portfolio" id="portfolio">
                 <div class="portfolio_top">
-                    <h3 class="m_5">Portfolio</h3>
+                    <h3 class="m_5">Портфоліо</h3>
                 </div>
                 <div class="wrap">
-                    <div class="portfolio-bottom">
-                        <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-                        <script type="text/javascript">
-                            $(document).ready(function () {
-                                $('#horizontalTab').easyResponsiveTabs({
-                                    type: 'default', //Types: default, vertical, accordion
-                                    width: 'auto', //auto or any width like 600px
-                                    fit: true   // 100% fit in a container
-                                });
-                            });
+                    <div class="porfolio-section">
+                        <div class="porfolio-section-title">
+                                <h3 class="m_5" style="border-top: 1px solid #4a576e;border-bottom: 1px solid #4a576e;">Портрети поп-арт</h3>
+                        </div>
+                        <div class="porfolio-section-content">
+                            <div class="fotorama" data-max-height="100%" data-max-width="100%" data-nav="thumbs" data-allowfullscreen="native">
+                                <img src="images/pop1.jpg">
+                                <img src="images/pop2.jpg">
+                                <img src="images/pop3.jpg">
+                                <img src="images/pop4.jpg">
+                                <img src="images/pop5.jpg">
+                                <img src="images/pop6.jpg">
+                                <img src="images/pop7.jpg">
+                            </div>
+                        </div>
+                    </div>
 
-                        </script>
-
-                        <!-- Portfolio Ends Here -->
-                        <div class="sap_tabs">
-                            <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-                                <ul class="resp-tabs-list">
-                                    <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All Projects</span></li>
-                                    <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>web design</span></li>
-                                    <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>graphic design</span></li>
-
-                                    <div class="clearfix"></div>
-                                </ul>
-                                <div class="resp-tabs-container">
-                                    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-                                        <div class="tab_img">
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p1.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p2.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p3.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p4.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p5.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p6.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-                                        <div class="tab_img">
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p1.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p2.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p3.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-                                        <div class="tab_img">
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p4.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p5.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-                                            <div class="col-md-4 img-top ">
-                                                <div class="portfolio-wrapper">
-                                                    <a href="single.html">
-                                                        <img src="images/p6.jpg" class="img-responsive" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <a href="single.html"><div class="links">
-                                                        <h4>Lorem ipsum dolor sit amet</h4><p class="img"><img src="images/likes.png" title="likes" alt="">12</p><div class="clearfix"></div>
-                                                        <ul>
-                                                            <li><span>July 20, 2014</span></li>
-                                                        </ul>
-                                                    </div></a>
-                                            </div>
-
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
+                    <div class="porfolio-section">
+                        <div class="porfolio-section-title">
+                            <h3 class="m_5" style="border-top: 1px solid #4a576e;border-bottom: 1px solid #4a576e;">Портрети олівцем</h3>
+                        </div>
+                        <div class="porfolio-section-content">
+                            <div class="fotorama" data-max-height="100%" data-max-width="100%" data-nav="thumbs" data-allowfullscreen="native">
+                                <img src="images/pop1.jpg">
+                                <img src="images/pop2.jpg">
+                                <img src="images/pop3.jpg">
+                                <img src="images/pop4.jpg">
+                                <img src="images/pop5.jpg">
+                                <img src="images/pop6.jpg">
+                                <img src="images/pop7.jpg">
                             </div>
                         </div>
                     </div>

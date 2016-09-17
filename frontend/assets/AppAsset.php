@@ -14,9 +14,12 @@ class AppAsset extends AssetBundle
     public $css = [
 //        'css/site.css',
         'css/style.css',
+        'lib/fotorama/fotorama.css',
+        'css/custom.css'
     ];
     public $js = [
-        'js/custom.js'
+        'lib/fotorama/fotorama.js',
+        'js/custom.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

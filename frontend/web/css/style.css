@@ -59,6 +59,7 @@ body a{
 }
 .menu li a:hover ,.menu li.active a{
 	color:#fb326f;
+	background-color: inherit;
 } 
 .toggleMenu {
 	display:  none;
@@ -220,7 +221,7 @@ a.banner-btn span {
 h2.head{
 	color:#384254;
 	font-weight:bold;
-	font-size:4em;
+	font-size:3em;
 	text-transform:uppercase;
 	margin-bottom: 0.8em;
 }
@@ -375,7 +376,7 @@ i.icon6{
 h3.m_5 {
 	color:#fff;
 	font-weight: bold;
-	font-size: 4em;
+	font-size: 3em;
 	text-transform: uppercase;
 	margin-bottom: 0.8em;
 }
@@ -811,7 +812,7 @@ ul.blog-list {
 	padding: 8em 0 10em;
 }
 h2.head, h3.m_5{
-	font-size: 3em;
+	font-size: 2.5em;
 }
 p.m_1, p.service_desc{
 	font-size: 1.4em;
@@ -1306,9 +1307,6 @@ div#portfoliolist {
 }
 #portfolio .wrap{
     position: relative;
-}
-#portfolio .wrap img{
-    margin:auto;
 }
 .portfolio .text-category {
 				display:block;

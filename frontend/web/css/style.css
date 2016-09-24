@@ -9,7 +9,8 @@ h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
 p {margin: 0;}
 html, body{
-   font-family: 'Economica', sans-serif;
+   /*font-family: 'Economica', sans-serif;*/
+	font-family: open-sans, sans-serif;
    font-size: 100%;
    background:#fff; 
 }
@@ -230,7 +231,7 @@ p.m_1{
 	padding: 1em;
 	font-size: 1.6em;
 	color: #384254;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -277,7 +278,7 @@ p.m_3{
 	line-height: 18px;
 	text-transform: uppercase;
 	font-weight: 600;
-	text-align: left;
+	text-align: center;
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 	-moz-transition: 0.2s;
@@ -286,7 +287,7 @@ p.m_3{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
-	margin-top: 2em;
+	cursor: pointer;
 }
 .content_btn:hover {
 	background:#E71F5C;
@@ -295,13 +296,13 @@ p.m_3{
 }
 .content_middle{
 	background:#e6e9ec;
-	padding:5em 0;
+	padding:2em 0;
 }
 p.service_desc {
 	background: #e6e9ec;
 	font-size: 1.6em;
 	color: #384254;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	border-bottom: 1px solid #D8D8D8;
 	margin-bottom: 2em;
 	padding-bottom: 1em;
@@ -366,12 +367,12 @@ i.icon6{
 	color:#9198A3;
 }
 .content_bottom{
-	padding:5em 0;
+	padding:2em 0;
 	background:#3e485b;
 }
 /*--portfolio--*/
 .portfolio_top{
-	margin-bottom:5%;
+	margin-bottom:0;
 }
 h3.m_5 {
 	color:#fff;

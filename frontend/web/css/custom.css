@@ -1,3 +1,49 @@
 .fotorama__wrap{
     margin: auto!important;
 }
+.porfolio-section-title h3{
+    border-top: 1px solid #4a576e;
+    /*border-bottom: 1px solid #4a576e;*/
+    padding: 28px 0;
+    text-align: center;
+    color: #fb326f;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.porfolio-section .porfolio-section-content{
+    margin-bottom: 50px;
+}
+
+.price_grid{
+    background: #3e485b;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.price_grid h3{
+    color: #fb326f;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+
+.price_grid .price-value{
+    color: white;
+    font-size: 30px;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+}
+.price_grid .price-calc-btn{
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.price_grid .error-block{
+    color: red;
+}

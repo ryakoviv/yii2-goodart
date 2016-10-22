@@ -12,6 +12,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use common\models\Order;
 
 /**
  * Site controller
@@ -72,7 +73,23 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new Order();
+        return $this->render('index', [
+            'model' => $model,
+        ]);
+    }
+
+    public function actionMakeOrder()
+    {
+        $model = new Order();
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->save()) {
+            return $this->render('successOrder');
+        }
+        else{
+            return $this->render('index', [
+                'model' => $model,
+            ]);
+        }
     }
 
     /**

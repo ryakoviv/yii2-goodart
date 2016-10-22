@@ -1,3 +1,28 @@
+#about .fa {
+    color: #3e485b;
+    margin-right: 10px;
+}
+.fa-twitter{
+    color: #1DA1F2;
+    font-size: 58px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.fa-facebook-official{
+    color: #4867AA;
+    font-size: 58px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.fa-vk{
+    color: white;
+    font-size: 30px;
+    background-color: #4C75A3;
+    border-radius: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
 .fotorama__wrap{
     margin: auto!important;
 }
@@ -47,3 +72,13 @@
 .price_grid .error-block{
     color: red;
 }
+#success-order {
+    margin: 80px 0;
+}
+#success-order .content_btn{
+     display: block;
+     width: 180px;
+     margin: 50px auto;
+    padding: 13px 30px;
+}
+

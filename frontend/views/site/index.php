@@ -1,9 +1,25 @@
 <?php
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 
 $this->title = 'My Yii Application';
 ?>
+<!----- start-banner---->
+<div class="banner text-center" id="home">
+    <div class="container">
+        <div class="banner-info">
+            <a class="banner-btn" href="#"><span> </span></a>
+            <h1>Good art</h1>
+            <h2>художня майстерня</h2>
+            <p>Художник – це не той, в кого є натхнення, а той, хто здатний надихнути інших.</p>
+            <!--            <a href="#" class="banner_btn">Lorem Ipsum</a>-->
+        </div>
+    </div>
+</div>
+<!----- //End-banner---->
+<div class="main">
     <div class="content_top" id="about">
         <div class='container'>
             <h2 class="head">Про нас</h2>
@@ -14,23 +30,23 @@ $this->title = 'My Yii Application';
             </p>
             <div class="row top_box">
                 <div class="col-lg-6 col-md-6 col-sm-6 contentleft_grid">
-                    <h3 class="m_2"><i class="pen"></i>Ми допоможемо вам з вибором</h3>
+                    <h3 class="m_2"><i class="fa fa-balance-scale"></i>Ми допоможемо вам з вибором</h3>
                     <p class="m_3">Ми малюємо портрети фарбами або звичайним олівцем, враховуючи всі ваші побажання. Ви можете замовити портрет класичний,сімейний портрет, портрет в стилі поп-арт.</p>
-<!--                    <a href="#" class="content_btn">More Info</a>-->
+
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <h3 class="m_2"><i class="tick"></i>Зробити замовлення дуже просто</h3>
+                    <h3 class="m_2"><i class="fa fa-check-square-o"></i>Зробити замовлення дуже просто</h3>
                     <p class="m_3">Усе, що Вам потрібно зробити, щоб замовити портрет - це принести або переслати якісні фотографії або інші зображення, які Ви б хотіли перенести на полотно.</p>
                 </div>
             </div>
             <div class="row top_box">
                 <div class="col-lg-6 col-md-6 col-sm-6 contentleft_grid">
-                    <h3 class="m_2"><i class="pen"></i>Вам не прийдеться довго чекати</h3>
+                    <h3 class="m_2"><i class="fa fa-clock-o"></i>Вам не прийдеться довго чекати</h3>
                     <p class="m_3">Час виконання залежить від черги замовлень, може бути від 2х до 10 днів. Тож краще оформити замовлення раніше!</p>
                     <!--                    <a href="#" class="content_btn">More Info</a>-->
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <h3 class="m_2"><i class="tick"></i>Для нас немає значення місце і час</h3>
+                    <h3 class="m_2"><i class="fa fa-globe"></i>Для нас немає значення місце і час</h3>
                     <p class="m_3">Замовлення приймаються будь-коли та з різних куточків України.</p>
                     <!--                    <a href="#" class="content_btn">More Info</a>-->
                 </div>
@@ -181,25 +197,27 @@ $this->title = 'My Yii Application';
             <div class="row">
                 <div class="col-md-9">
                     <div class="contact-form">
-                        <form>
-                            <p class="comment-form-author"><label for="author">Your Name:</label>
-                                <input type="text" class="textbox" value="Enter your name here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name here...';}">
-                            </p>
-                            <p class="comment-form-author"><label for="author">Email:</label>
-                                <input type="text" class="textbox" value="Enter your email here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-                            </p>
-                            <p class="comment-form-author"><label for="author">Message:</label>
-                                <textarea value="Enter your message here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Enter your message here...</textarea>
-                            </p>
-                            <input type="submit" id="submit" value="Submit">
-                        </form>
+                        <?php $form = ActiveForm::begin(['action' => ['make-order']]); ?>
+                            <?= $form->field($model, 'name')->textInput(['maxlength' => 255, 'class' => 'textbox', 'placeholder' =>'Напишіть своє ім\'я тут...'])->label("Ваше ім'я:"); ?>
+                            <?= $form->field($model, 'email')->textInput(['maxlength' => 255, 'class' => 'textbox', 'placeholder' =>'Напишіть свій email тут...'])->label("Ваш Email:"); ?>
+                            <?= $form->field($model, 'message')->textarea(['placeholder' =>'Напишіть ваше повідомлення тут...'])->label("Повідомлення:"); ?>
+<!--                            --><?php //Html::submitButton('Відправити', ['class' => 'submit', "id"=>"submit"]) ?>
+                        <input type="submit" value="Відправити">
+                        <?php ActiveForm::end() ?>
                     </div>
                 </div>
                 <div class="col-md-3 contact_right">
-                    <h4>Address</h4>
-                    <p class="contact_address">esse molestie consequat,<br>vel illum dolore</p>
-                    <p class="contact_address1">Phone: +1 800 258 2689<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 800 258 2689 </p>
+                    <h4>Контакти</h4>
+                    <p class="contact_address">Пошта:<br>good-art.gmail.com</p>
+                    <p class="contact_address1">Телефон:<br>+380 98 701 5557</p>
+                    <p class="contact_address1">Ми в соціальних мережах:<br>
+                        <i class="fa fa-vk"></i><br>
+                        <i class="fa fa fa-facebook-official"></i><br>
+                        <i class="fa fa-twitter"></i><br>
+
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+</div>

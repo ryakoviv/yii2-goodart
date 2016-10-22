@@ -40,6 +40,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                "index"=>"site/index",
+                'order'=>"site/make-order"
             ],
         ],
     ],
